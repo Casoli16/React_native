@@ -44,15 +44,16 @@ export default function App() {
     <View style={styles.container}>
       <Text style={{fontSize: 25, fontWeight: 'bold'}}>Mini calculadora</Text>
       <Text style={{marginTop:30, marginBottom:10}}>Numero 1</Text>
-      <Input
-      title_placeholder={'Primer numero'}
-      style={{backgroundColor: '#EEEBE9', 
-      padding:8, width:190, 
-      marginBottom:15, 
-      borderRadius:10}}
-      numero={numero1}
-      setNumero1={setNumero1}>
-      </Input>
+      <TextInput 
+        placeholder='Ingrese el primer número' 
+        value={numero1}
+        onChangeText={setNumero1}
+        style={
+          {backgroundColor: '#EEEBE9', 
+          padding:8, width:190, 
+          marginBottom:15, 
+          borderRadius:10}}>
+        </TextInput>
       <Text style={{marginTop:15, marginBottom:10}}>Numero 2</Text>
       <TextInput 
         placeholder='Ingrese el segundo número' 
